@@ -1,0 +1,179 @@
+<style>
+  /* .container {
+  max-width: {{ .Site.Params.containerMaxWidth | default "700px" | safeCSS }};
+} */
+  #nav a {
+    font-weight: bold;
+    color: inherit;
+  }
+
+  #nav a.nav-link-active {
+    background-color: #212529;
+    color: #fff;
+  }
+
+  #nav-border {
+    border-bottom: 1px solid #212529;
+  }
+
+  #main {
+    margin-top: 1em;
+    margin-bottom: 4em;
+  }
+
+  #home-jumbotron {
+    background-color: inherit;
+  }
+
+  #footer .container {
+    padding: 1em 0;
+  }
+
+  #footer a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .font-125 {
+    font-size: 125%;
+  }
+
+  .tag-btn {
+    margin-bottom: 0.3em;
+  }
+
+  pre {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 16px;
+  }
+
+  pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+  }
+
+  img,
+  iframe,
+  embed,
+  video,
+  audio {
+    max-width: 100%;
+  }
+
+  .btn-lg svg {
+    margin-top: -0.2em;
+  }
+
+  /* Original styles, updated below */
+
+  .title-top h1 {
+    margin-top: 0;
+  }
+
+  .title-top span {
+    margin-top: 10px;
+    font-size: 18px;
+    display: block;
+  }
+  
+  .time-controls-container {
+
+  }
+
+  .clock-display {
+    font-size: 2.0rem;
+    margin-top: -0.1em;
+    font-weight: bold;
+  }
+
+  .clock-display-container {
+    text-align: right;
+  }
+
+  .add-chairs-container {
+    clear:both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding: 15px 10px;
+
+    background-color: #ececec;
+  }
+
+  div.chairs-map {
+    padding: 10px;
+  }
+
+  div.chair {
+    width: 95px;
+    height: 98px;
+    border: 1px solid #ccc;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  div.chair .chair-label {
+    display: block;
+    font-weight: bold;
+    margin-top: 3px;
+  }
+
+  div.chair:hover {
+    background-color: #fafafa;
+    border-color: #999;
+  }
+
+  /* .js-start-time,
+  .js-stop-time {
+    width: 98px;
+  } */
+
+  @media (min-width: 1px) {
+
+    .js-user-type-select {
+      max-width: 110px;
+    }
+
+  }
+
+  @media (min-width: 480px) {
+
+    .js-user-type-select {
+      max-width: 150px;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    .js-user-type-select {
+      max-width: 230px;
+    }
+
+  }
+
+  @media (min-width: 992px) {
+
+    .js-user-type-select {
+      max-width: 300px;
+    }
+
+  }
+</style>

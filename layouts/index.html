@@ -1,0 +1,191 @@
+{{ define "main" }}
+
+<div class="container">
+  <div class="time-controls-container">
+    <div style="float: left; max-width: 96px; margin-right: 10px; min-height: 80px;">
+      <label for="timeInput">Time</label>
+
+      <input type="text" id="timeInput" class="form-control form-control-lg js-time-elapsed-input" autocomplete="off" />
+    </div>
+
+    <div style="float: left; margin-right: 10px; min-height: 80px;">
+      <label>Controls</label><br />
+
+      <button class="btn btn-lg btn-secondary js-start-time" title="Start Timer">
+        <i data-feather="play" aria-hidden="true"></i>
+        <span class="hidden-xs">Start</span>
+      </button>
+      <button class="btn btn-lg btn-secondary js-stop-time" title="Stop Timer">
+        <i data-feather="pause" aria-hidden="true"></i>
+        <span class="hidden-xs">Pause</span>
+      </button>
+      <button class="btn btn-lg btn-secondary js-reset-time" title="Reset Timer">
+        <i data-feather="skip-back" aria-hidden="true"></i>
+        <span class="hidden-xs">Reset</span>
+      </button>
+    </div>
+
+    <div style="float: left; min-height: 80px;">
+      <label>Jump forward/back</label><br />
+
+      <button class="btn btn-lg btn-secondary js-add-time" data-amount="15" data-date-type="minutes"
+        title="Add 15 minutes">
+        <i data-feather="plus" aria-hidden="true"></i>
+        <span class="hidden-xs">
+          <!--[if lt IE 12]>
+            +
+          <![endif]-->
+          15 min
+        </span>
+      </button>
+      <button class="btn btn-lg btn-secondary js-remove-time" data-amount="15" data-date-type="minutes"
+        title="Subtract 15 minutes">
+        <i data-feather="minus" aria-hidden="true"></i>
+        <span class="hidden-xs">
+          <!--[if lt IE 12]>
+            –
+          <![endif]-->
+          15 min
+        </span>
+      </button>
+    </div>
+
+    <div class="clock-display-container" style="float:right;">
+      <label>Cost</label><br />
+
+      <div class="clock-display">
+        <span class="js-cost-display">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="container">
+  <div class="add-chairs-container">
+
+    <div style="float:left; margin-right: 10px;">
+      <div class="dropdown">
+        <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          [Gear]
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <h6 class="dropdown-header">Organization</h6>
+          <button class="dropdown-item js-change-organization" data-organization="core" type="button">Core Public Service</button>
+          <button class="dropdown-item js-change-organization" data-organization="caf" type="button">Canadian Armed Forces</button>
+          <button class="dropdown-item js-change-organization" data-organization="cse" type="button">Communications Security Establishment</button>
+          <button class="dropdown-item js-change-organization" data-organization="csis" type="button">Canadian Security Intelligence Service</button>
+          <button class="dropdown-item js-change-organization" data-organization="neb" type="button">National Energy Board</button>
+          
+
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Pay Rate</h6>
+
+          <button class="dropdown-item js-change-rate" data-rate="min" type="button">Minimum</button>
+          <button class="dropdown-item js-change-rate" data-rate="median" type="button">Median</button>
+          <button class="dropdown-item js-change-rate" data-rate="max" type="button">Maximum</button>
+          
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Costing</h6>
+
+          <button class="dropdown-item js-change-costing" data-costing="all" type="button">Salary and benefits</button>
+          <button class="dropdown-item js-change-costing" data-costing="salary" type="button">Salary only</button>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div style="float:left; margin-right: 10px;">
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false" title="Options">
+          <i class="fa fa-cog" aria-hidden="true"></i>
+          <span class="sr-only">Options</span>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">Organization</li>
+          <li>
+            <a href="#" class="js-change-organization" data-organization="core">
+              <i class="fa fa-check fa-fw" aria-hidden="true"></i>
+              Core Public Service
+            </a>
+          </li>
+          <li>
+            <a href="#" class="js-change-organization" data-organization="caf">
+              <i class="fa fa-fw" aria-hidden="true"></i>
+              Canadian Armed Forces
+            </a>
+          </li>
+          <li>
+            <a href="#" class="js-change-organization" data-organization="neb">
+              <i class="fa fa-fw" aria-hidden="true"></i>
+              National Energy Board
+            </a>
+          </li>
+          <li role="separator" class="divider"></li>
+          <li class="dropdown-header">Pay rate</li>
+          <li>
+            <a href="#" class="js-change-rate" data-rate="min">
+              <i class="fa fa-fw" aria-hidden="true"></i>
+              Minimum
+            </a>
+          </li>
+          <li>
+            <a href="#" class="js-change-rate" data-rate="median">
+              <i class="fa fa-check fa-fw" aria-hidden="true"></i>
+              Median
+            </a>
+          </li>
+          <li>
+            <a href="#" class="js-change-rate" data-rate="max">
+              <i class="fa fa-fw" aria-hidden="true"></i>
+              Maximum
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+
+    <div style="float:left; margin-right: 10px;">
+      <select id="user-type" class="form-control input-lg js-user-type-select"></select>
+    </div>
+
+    <div style="float:left; margin-right: 10px;">
+      <button type="button" class="btn btn-lg btn-secondary js-add-user" title="Add Participant">
+        <i class="fa fa-user-plus" aria-hidden="true"></i>
+        <span class="hidden-xs">Add Participant</span>
+      </button>
+    </div>
+
+    <div style="float:right;">
+      <button class="btn btn-lg btn-secondary js-reset" title="Clear all participants">
+        <span class="visible-xs"><i class="fa fa-close" aria-hidden="true"></i></span>
+        <span class="hidden-xs">Clear</span>
+      </button>
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="chairs-map"></div>
+</div>
+<!-- /.container -->
+
+<div class="clearfix"></div>
+
+<div id="home-jumbotron" class="jumbotron text-center">
+  {{ with.Content }}
+  <h1>{{ $.Page.Title }}</h1>
+  {{ . }}
+  {{ else }}
+  <h1>{{ .Site.Title }}</h1>
+  <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
+  {{ end }}
+</div>
+
+{{ end }}

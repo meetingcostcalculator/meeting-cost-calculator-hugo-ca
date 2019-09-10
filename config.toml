@@ -1,3 +1,22 @@
-baseURL = "http://example.org/"
+baseURL = "https://meetingcostcalculator.ca/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Meeting Cost Calculator"
+description = "A simple online calculator to estimate the cost of public sector meetings."
+theme = "vanilla-bootstrap-hugo-theme"
+googleAnalytics = "UA-97098640-1"
+
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
+[params]
+  includeBootstrapJs = true
+  showActiveNav = false
+  containerMaxWidth = "700px"
+  dateFormat = "Jan 2, 2006"
+  homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
+  footerText = "Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)"
+  hideFooter = true
