@@ -53,11 +53,46 @@ $(function() {
       app.meetingCost.subtractTime(amount, dateType);
     });
 
-    // Change organization
-    $(".js-change-organization").on("click", function(e) {
+    // Change organization, pay rate, or costing method
+    $(".js-settings-menu").on("click", "button", function(e) {
       var elem = $(e.currentTarget);
-      var organization = $(elem).data("organization");
 
+      console.log(elem);
+
+      // Change organization
+      if ($(elem).hasClass("js-change-organization")) {
+        console.log("change org");
+        var organization = $(elem).data("organization");
+        if (organization !== app.selectedOrganization) {
+          app.meetingCost.changeOrganization(organization);
+        }
+      }
+
+      if ($(elem).hasClass("js-change-rate")) {
+        console.log("change rate");
+        var rate = $(elem).data("rate");
+        if (rate !== app.selectedRate) {
+          // Update the calculated cost
+          app.selectedRate = rate;
+          app.meetingCost.recalculateCost();
+        }
+      }
+
+      if ($(elem).hasClass("js-change-costing")) {
+        console.log("change rate");
+        var costing = $(elem).data("costing");
+        if (costing !== app.selectedCosting) {
+          // Update the selected costing model
+          app.selectedCosting = costing;
+          app.meetingCost.recalculateCost();
+        }
+      }
+      // var organization = $(elem).data("organization");
+
+      // Update the settings menu
+      app.meetingCost.updateSettingsMenu();
+
+      return;
       // If that organization is already selected, no action required:
       if (organization !== app.selectedOrganization) {
         // Update check icons
@@ -98,8 +133,17 @@ $(function() {
       $("#ratesSelectTemplate").html()
     );
 
+    app.meetingCost.settingsMenuTemplate = _.template(
+      $("#settingsMenuTemplate").html()
+    );
+
+    // Set initial values for each setting:
     app.meetingCost.changeOrganization("core");
     app.selectedRate = "median";
+    app.selectedCosting = "all";
+
+    // Update the settings menu:
+    app.meetingCost.updateSettingsMenu();
 
     // Initializes other re-resettable values
     app.meetingCost.reset();
@@ -136,6 +180,13 @@ $(function() {
 
   app.meetingCost.unReset = function() {
     $(".js-reset").prop("disabled", 0);
+  };
+
+  app.meetingCost.updateSettingsMenu = function() {
+    $(".js-settings-menu").html(app.meetingCost.settingsMenuTemplate());
+
+    // Refresh icons
+    feather.replace();
   };
 
   app.meetingCost.changeOrganization = function(organization) {

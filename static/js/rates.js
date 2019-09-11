@@ -5,7 +5,8 @@ var app = app || {};
 app.organizations = {
   core: {
     name: "Core Public Service",
-    hideDropdownLabels: 0
+    hideDropdownLabels: 0,
+    benefitFactor: 1.4
   },
   neb: {
     name: "National Energy Board",
@@ -21,9 +22,12 @@ app.organizations = {
   },
   caf: {
     name: "Canadian Armed Forces",
-    hideDropdownLabels: 1
+    hideDropdownLabels: 1,
+    benefitFactor: 1.8
   }
 };
+
+app.defaultBenefitFactor = 1.2;
 
 // Holder for rates from multiple organizations
 app.rates = app.rates || {};
