@@ -1,3 +1,6 @@
+<!-- Lodash templates -->
+{{ (partial "lodash-templates.ejs" .) | safeHTML }}
+
 <script src="{{ "js/feather.min.js" | absURL }}"></script>
 <script>
   feather.replace()
@@ -8,4 +11,18 @@
 <script src="{{ "js/bootstrap.bundle.min.js" | absURL }}"></script>
 {{ end }}
 
+<script src="{{ "js/lib/lodash.min.js" | absURL }}"></script>
+<script src="{{ "js/lib/moment.min.js" | absURL }}"></script>
+<script src="{{ "js/lib/moment-duration-format.min.js" | absURL }}"></script>
+<script src="{{ "js/lib/numeral.min.js" | absURL }}"></script>
+
 <script src="{{ "js/meetingcost.js" | absURL }}"></script>
+<script src="{{ "js/rates.js" | absURL }}"></script>
+
+<script type="text/javascript">
+  $(function() {
+    'use strict';
+  
+    app.meetingCost.initialize();
+  });
+</script>
