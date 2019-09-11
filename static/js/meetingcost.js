@@ -309,5 +309,7 @@ $(function() {
 
   app.meetingCost.renderChairs = function() {
     $(".chairs-map").html(app.meetingCost.chairContainerTemplate());
+    // Re-render Feather icons
+    feather.replace();
   };
 });

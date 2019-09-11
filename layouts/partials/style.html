@@ -115,7 +115,7 @@
   }
 
   div.chairs-map {
-    padding: 10px;
+    padding: 10px 0;
   }
 
   div.chair {
@@ -128,6 +128,7 @@
     margin-bottom: 20px;
     padding: 10px;
     cursor: pointer;
+    font-size: 1.1rem;
   }
 
   div.chair .chair-label {
@@ -139,6 +140,25 @@
   div.chair:hover {
     background-color: #fafafa;
     border-color: #999;
+  }
+
+  div.chair .user-focused {
+    margin-left: 8px;
+  }
+
+/* Alternating icons */
+  div.chair:hover .user-focused {
+    display: block;
+  }
+  div.chair:hover .user-unfocused {
+    display: none;
+  }
+
+  div.chair .user-focused {
+    display: none;
+  }
+  div.chair .user-unfocused {
+    display: block;
   }
 
   /* .js-start-time,
