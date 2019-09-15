@@ -57,11 +57,10 @@ $(function() {
     $(".js-settings-menu").on("click", "button", function(e) {
       var elem = $(e.currentTarget);
 
-      console.log(elem);
+      // console.log(elem);
 
       // Change organization
       if ($(elem).hasClass("js-change-organization")) {
-        console.log("change org");
         var organization = $(elem).data("organization");
         if (organization !== app.selectedOrganization) {
           app.meetingCost.changeOrganization(organization);
@@ -69,7 +68,6 @@ $(function() {
       }
 
       if ($(elem).hasClass("js-change-rate")) {
-        console.log("change rate");
         var rate = $(elem).data("rate");
         if (rate !== app.selectedRate) {
           // Update the calculated cost
@@ -79,7 +77,6 @@ $(function() {
       }
 
       if ($(elem).hasClass("js-change-costing")) {
-        console.log("change rate");
         var costing = $(elem).data("costing");
         if (costing !== app.selectedCosting) {
           // Update the selected costing model
@@ -87,22 +84,9 @@ $(function() {
           app.meetingCost.recalculateCost();
         }
       }
-      // var organization = $(elem).data("organization");
 
       // Update the settings menu
       app.meetingCost.updateSettingsMenu();
-
-      return;
-      // If that organization is already selected, no action required:
-      if (organization !== app.selectedOrganization) {
-        // Update check icons
-        $(".js-change-organization i").removeClass("fa-check");
-        $(elem)
-          .find("i")
-          .addClass("fa-check");
-
-        app.meetingCost.changeOrganization(organization);
-      }
     });
 
     // Change rate
@@ -147,6 +131,9 @@ $(function() {
 
     // Initializes other re-resettable values
     app.meetingCost.reset();
+
+    // Set the default time to 1 hour
+    // app.meetingCost.addTime(60, "minutes");
 
     // Initial run of the timer tick:
     _.delay(app.meetingCost.tick, 1000);
@@ -200,6 +187,46 @@ $(function() {
     );
   };
 
+  // This calculates median rates (now that these are no longer stored ahead of time), as well as adds the benefit factor calculations:
+  app.meetingCost.calculateUserCosts = function(
+    selectedOrganization,
+    rateData
+  ) {
+    var benefitFactor = _.get(
+      app.organizations,
+      selectedOrganization + ".benefitFactor",
+      app.defaultBenefitFactor
+    );
+    // console.log(benefitFactor);
+
+    // This converts string values to floats (by multiplying by 1.0) before adding them together to average them up:
+    _.set(
+      rateData,
+      "median",
+      (_.get(rateData, "min", 0) * 1.0 + _.get(rateData, "max", 0) * 1.0) / 2.0
+    );
+
+    // Set min, max, and median values that include the benefit factor, since these aren't stored in the source rates data
+    // Uses Lodash's handy set and get functions:
+    _.set(
+      rateData,
+      "minAll",
+      _.round(_.get(rateData, "min", 0) * benefitFactor)
+    );
+    _.set(
+      rateData,
+      "medianAll",
+      _.round(_.get(rateData, "median", 0) * benefitFactor)
+    );
+    _.set(
+      rateData,
+      "maxAll",
+      _.round(_.get(rateData, "max", 0) * benefitFactor)
+    );
+
+    return rateData;
+  };
+
   app.meetingCost.addUser = function() {
     var userType = $(".js-user-type-select").val();
     var rateData = _.find(app.rates[app.selectedOrganization], {
@@ -212,9 +239,15 @@ $(function() {
 
     // Don't add if it's the "Choose participants" option
     if (rateData) {
+      rateData = app.meetingCost.calculateUserCosts(
+        app.selectedOrganization,
+        rateData
+      );
+
       app.meetingCost.participants.push(rateData);
     } else {
-      $("#user-type").animateCss("shake");
+      // $("#user-type").animateCss("shake");
+      console.log("No user selected.");
     }
 
     app.meetingCost.recalculateCost();
@@ -340,8 +373,12 @@ $(function() {
     // console.log('Calculating ' + app.selectedRate);
 
     _.each(app.meetingCost.participants, function(value, index) {
-      annualValue += _.parseInt(value[app.selectedRate]);
-      // console.log(_.parseInt(value[app.selectedRate]));
+      if (app.selectedCosting === "all") {
+        // The values with benefits etc. included are the same keywords with "All" added, e.g. minAll, medianAll, maxAll
+        annualValue += _.parseInt(value[app.selectedRate + "All"]);
+      } else {
+        annualValue += _.parseInt(value[app.selectedRate]);
+      }
     });
 
     // Convert from annual salary to per-hour cost, by dividing by 1950 (37.5  * 52)
