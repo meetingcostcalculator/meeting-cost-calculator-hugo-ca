@@ -30,11 +30,11 @@ $(function() {
       app.meetingCost.stopTime(e);
     });
     $(".js-reset").on("click", function(e) {
-      app.meetingCost.reset(e, 1);
+      app.meetingCost.resetParticipants();
     });
 
     $(".js-reset-time").on("click", function(e) {
-      app.meetingCost.reset(e);
+      app.meetingCost.resetTime();
     });
 
     $(".js-add-time").on("click", function(e) {
@@ -51,6 +51,14 @@ $(function() {
       var dateType = $(elem).data("date-type");
 
       app.meetingCost.subtractTime(amount, dateType);
+    });
+
+    $(".js-set-time").on("click", function(e) {
+      var elem = $(e.currentTarget);
+      var amount = $(elem).data("amount");
+      var dateType = $(elem).data("date-type");
+
+      app.meetingCost.setTime(amount, dateType);
     });
 
     // Change organization, pay rate, or costing method
@@ -130,7 +138,8 @@ $(function() {
     app.meetingCost.updateSettingsMenu();
 
     // Initializes other re-resettable values
-    app.meetingCost.reset();
+    app.meetingCost.resetTime();
+    app.meetingCost.resetParticipants();
 
     // Set the default time to 1 hour
     // app.meetingCost.addTime(60, "minutes");
@@ -139,26 +148,25 @@ $(function() {
     _.delay(app.meetingCost.tick, 1000);
   };
 
-  app.meetingCost.reset = function(e, resetChairs) {
+  app.meetingCost.resetParticipants = function() {
+    app.meetingCost.participants = [];
+
+    app.meetingCost.updateTimeClock();
+
+    $(".js-reset").prop("disabled", 1);
+
+    app.meetingCost.renderChairs();
+  };
+
+  app.meetingCost.resetTime = function() {
     app.meetingCost.isTimerRunning = false;
     app.meetingCost.previousTimerSeconds = 0;
 
     app.meetingCost.timeElapsedSeconds = 0;
 
-    if (resetChairs === 1) {
-      app.meetingCost.participants = [];
-
-      $(".js-reset").prop("disabled", 1);
-    }
-
     app.meetingCost.timeElapsedMoment = moment.duration(0);
 
     app.meetingCost.updateTimeClock();
-
-    app.meetingCost.recalculateCost();
-
-    app.meetingCost.renderChairs();
-
     // Initialize the start/stop buttons (essentially - disabling the "Stop" button while inactive)
     app.meetingCost.stopTime();
 
@@ -289,6 +297,15 @@ $(function() {
     }
 
     app.meetingCost.updateTimeClock();
+  };
+  app.meetingCost.setTime = function(amount, dateType) {
+    app.meetingCost.timeElapsedMoment = moment.duration(amount, dateType);
+
+    app.meetingCost.updateTimeClock();
+
+    if (_.parseInt(amount) !== 0) {
+      $(".js-reset-time").prop("disabled", 0);
+    }
   };
 
   // Runs once per second

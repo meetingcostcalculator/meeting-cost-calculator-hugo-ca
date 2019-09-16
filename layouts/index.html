@@ -2,10 +2,10 @@
 
 <div class="container">
   <div class="time-controls-container">
-    <div style="float: left; max-width: 110px; margin-right: 10px; min-height: 80px;">
+    <div style="float: left; max-width: 120px; margin-right: 10px; min-height: 80px;">
       <label for="timeInput">Time</label>
 
-      <input type="text" id="timeInput" class="form-control form-control-lg js-time-elapsed-input" autocomplete="off" />
+      <input type="text" id="timeInput" class="form-control form-control-lg js-time-elapsed-input" autocomplete="off" style="text-align: right" />
     </div>
 
     <div style="float: left; margin-right: 10px; min-height: 80px;">
@@ -31,23 +31,47 @@
       <button class="btn btn-lg btn-secondary js-add-time" data-amount="15" data-date-type="minutes"
         title="Add 15 minutes">
         <i data-feather="plus" aria-hidden="true"></i>
-        <span class="hidden-xs">
-          <!--[if lt IE 12]>
-            +
-          <![endif]-->
-          15 min
-        </span>
       </button>
       <button class="btn btn-lg btn-secondary js-remove-time" data-amount="15" data-date-type="minutes"
         title="Subtract 15 minutes">
         <i data-feather="minus" aria-hidden="true"></i>
-        <span class="hidden-xs">
-          <!--[if lt IE 12]>
-            –
-          <![endif]-->
-          15 min
-        </span>
       </button>
+
+      <div class="dropdown" style="display: inline-block;">
+        <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Set time to…
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+          <button type="button" class="dropdown-item js-set-time" data-amount="30" data-date-type="minutes">
+            30 minutes
+          </button>
+          <button type="button" class="dropdown-item js-set-time" data-amount="1" data-date-type="hours">
+            1 hour
+          </button>
+          <button type="button" class="dropdown-item js-set-time" data-amount="2" data-date-type="hours">
+            2 hours
+          </button>
+          <button type="button" class="dropdown-item js-set-time" data-amount="3" data-date-type="hours">
+            3 hours
+          </button>
+          <button type="button" class="dropdown-item js-set-time" data-amount="4" data-date-type="hours">
+            4 hours
+          </button>
+          <button type="button" class="dropdown-item js-set-time" data-amount="7.5" data-date-type="hours">
+            7.5 hours
+          </button>
+          <button type="button" class="dropdown-item js-set-time" data-amount="8" data-date-type="hours">
+            8 hours
+          </button>
+          <button type="button" class="dropdown-item js-set-time" data-amount="37.5" data-date-type="hours">
+            37.5 hours
+          </button>
+          <button type="button" class="dropdown-item js-set-time" data-amount="40" data-date-type="hours">
+            40 hours
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="clock-display-container" style="float:right;">
@@ -61,27 +85,23 @@
   <div class="clearfix"></div>
 </div>
 
-
-
 <div class="add-chairs-container-box">
-<div class="container">
-  <div class="add-chairs-container">
-
-    <div style="float:left; margin-right: 10px;">
-      <div class="dropdown">
-        <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <i data-feather="settings" aria-hidden="true"></i>
-          <span class="sr-only">Options</span>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <div class="js-settings-menu"></div>
-
+  <div class="container">
+    <div class="add-chairs-container">
+      <div style="float:left; margin-right: 10px;">
+        <div class="dropdown">
+          <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i data-feather="settings" aria-hidden="true"></i>
+            <span class="sr-only">Options</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <div class="js-settings-menu"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- <div style="float:left; margin-right: 10px;">
+      <!-- <div style="float:left; margin-right: 10px;">
 
       <div class="btn-group">
         <button type="button" class="btn btn-default dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true"
@@ -134,36 +154,34 @@
       </div>
     </div> -->
 
-    <div style="float:left; margin-right: 10px;">
-      <select id="user-type" class="custom-select custom-select-lg js-user-type-select"></select>
-    </div>
+      <div style="float:left; margin-right: 10px;">
+        <select id="user-type" class="custom-select custom-select-lg js-user-type-select" style="min-width: 300px"></select>
+      </div>
 
-    <div style="float:left; margin-right: 10px;">
-      <button type="button" class="btn btn-lg btn-secondary js-add-user" title="Add Participant">
+      <div style="float:left; margin-right: 10px;">
+        <button type="button" class="btn btn-lg btn-secondary js-add-user" title="Add Participant">
           <i data-feather="user-plus" aria-hidden="true"></i>
-        <span class="hidden-xs">Add Participant</span>
-      </button>
-    </div>
+          <span class="hidden-xs">Add Participant</span>
+        </button>
+      </div>
 
-    <div style="float:right;">
-      <button class="btn btn-lg btn-secondary js-reset" title="Clear all participants">
-        <span class="visible-xs"><i class="fa fa-close" aria-hidden="true"></i></span>
-        <span class="hidden-xs">Clear</span>
-      </button>
-    </div>
+      <div style="float:right;">
+        <button class="btn btn-lg btn-secondary js-reset" title="Clear all participants">
+          <span class="visible-xs"><i class="fa fa-close" aria-hidden="true"></i></span>
+          <span class="hidden-xs">Clear</span>
+        </button>
+      </div>
 
-    <div class="clearfix"></div>
+      <div class="clearfix"></div>
+    </div>
   </div>
-</div>
-<!-- /.container -->
+  <!-- /.container -->
 </div>
 
 <div class="clearfix"></div>
 
 <div class="container">
-
-    <div class="chairs-map"></div>
-
+  <div class="chairs-map"></div>
 </div>
 
 <!-- <div id="home-jumbotron" class="jumbotron text-center">
