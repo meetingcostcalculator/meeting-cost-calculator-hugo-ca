@@ -132,7 +132,7 @@ $(function() {
     // Set initial values for each setting:
     app.meetingCost.changeOrganization("core");
     app.selectedRate = "median";
-    app.selectedCosting = "all";
+    app.selectedCosting = "salary"; // For all costs, change this to "all"
 
     // Update the settings menu:
     app.meetingCost.updateSettingsMenu();
