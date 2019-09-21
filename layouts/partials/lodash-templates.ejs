@@ -1,0 +1,95 @@
+<script type="text/template" id="chairContainerTemplate">
+
+  <% if(_.isEmpty(app.meetingCost.participants)) { %>
+  
+    <div class="empty-chairs-placeholder">
+      <h2>Welcome to the Meeting Cost Calculator!</h2>
+      <p>To get started,</p>
+      <ol>
+        <li>Choose participants by salary classification from the drop down menu, then click "Add Participant".</li>
+        <li>Start the timer above, or use the "Set time to…" menu to specify a meeting duration.</li>
+      </ol>
+      <p>You can choose different public sector organizations by using the gear options menu above.</p>
+      <p><a href="#" data-toggle="collapse" data-target="#navbarHeader">Learn more</a></p>
+    </div>
+  
+  <% } else { %>
+  
+    <% _.each(app.meetingCost.participants, function(value, index) { %>
+  
+      <div class="chair js-remove-user" data-user-index="<%- index %>" title="<%- value.label %> <%- value.description %>">
+        <div class="user-unfocused">
+          <i data-feather="user" aria-hidden="true" width="40" height="40"></i>
+        </div>
+        <div class="user-focused">
+          <i data-feather="user-x" aria-hidden="true" width="40" height="40"></i>
+        </div>
+        <span class="chair-label"><%- value.label %></span>
+      </div>
+  
+    <% }) %>
+  
+  <% } %>
+  
+  
+</script>
+
+<script type="text/template" id="ratesSelectTemplate">
+
+<option value="">(Choose participants)</option>
+
+<% _.each(rates, function(value, index) { %>
+
+  <option value="<%- value.label %>"><% if(organization.hideDropdownLabels == 0) { %><%- value.label %> <% } %><%- value.description %></option>
+
+<% }) %>
+
+
+</script>
+
+<script type="text/template" id="settingsMenuTemplate">
+
+  <h6 class="dropdown-header">Organization</h6>
+
+  <% _.each(app.organizations, function(value, index) { %>
+    <% if(app.selectedOrganization == index) { %>
+      <button class="dropdown-item js-change-organization active-dropdown-item" data-organization="<%- index %>" type="button"><i data-feather="check-circle" aria-hidden="true" height="18"></i> <%- value.name %></button>
+    <% } else { %>
+      <button class="dropdown-item js-change-organization" data-organization="<%- index %>" type="button"><i data-feather="circle" aria-hidden="true" height="18"></i> <%- value.name %></button>
+    <% } %>
+  <% }) %>
+  
+  <div class="dropdown-divider"></div>
+  <h6 class="dropdown-header">Pay Rate</h6>
+
+  <% if(app.selectedRate == 'min') { %>
+    <button class="dropdown-item js-change-rate active-dropdown-item" data-rate="min" type="button"><i data-feather="check-circle" aria-hidden="true" height="18"></i> Minimum</button>
+  <% } else { %>
+    <button class="dropdown-item js-change-rate" data-rate="min" type="button"><i data-feather="circle" aria-hidden="true" height="18"></i> Minimum</button>
+  <% } %>
+  <% if(app.selectedRate == 'median') { %>
+    <button class="dropdown-item js-change-rate active-dropdown-item" data-rate="median" type="button"><i data-feather="check-circle" aria-hidden="true" height="18"></i> Median</button>
+  <% } else { %>
+    <button class="dropdown-item js-change-rate" data-rate="median" type="button"><i data-feather="circle" aria-hidden="true" height="18"></i> Median</button>
+  <% } %>
+  <% if(app.selectedRate == 'max') { %>
+    <button class="dropdown-item js-change-rate active-dropdown-item" data-rate="max" type="button"><i data-feather="check-circle" aria-hidden="true" height="18"></i> Maximum</button>
+  <% } else { %>
+    <button class="dropdown-item js-change-rate" data-rate="max" type="button"><i data-feather="circle" aria-hidden="true" height="18"></i> Maximum</button>
+  <% } %>
+  
+  <div class="dropdown-divider"></div>
+  <h6 class="dropdown-header">Costing</h6>
+
+  <% if(app.selectedCosting == 'salary') { %>
+    <button class="dropdown-item js-change-costing active-dropdown-item" data-costing="salary" type="button"><i data-feather="check-circle" aria-hidden="true" height="18"></i> Salary only</button>
+  <% } else { %>
+    <button class="dropdown-item js-change-costing" data-costing="salary" type="button"><i data-feather="circle" aria-hidden="true" height="18"></i> Salary only</button>
+  <% } %>
+  <% if(app.selectedCosting == 'all') { %>
+    <button class="dropdown-item js-change-costing active-dropdown-item" data-costing="all" type="button"><i data-feather="check-circle" aria-hidden="true" height="18"></i> Salary, benefits, and other costs</button>
+  <% } else { %>
+    <button class="dropdown-item js-change-costing" data-costing="all" type="button"><i data-feather="circle" aria-hidden="true" height="18"></i> Salary, benefits, and other costs</button>
+  <% } %>
+
+</script>
