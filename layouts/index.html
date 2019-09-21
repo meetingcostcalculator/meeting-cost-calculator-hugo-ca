@@ -5,7 +5,7 @@
     <div style="float: left; max-width: 120px; margin-right: 10px; min-height: 80px;">
       <label for="timeInput">Time</label>
 
-      <input type="text" id="timeInput" class="form-control form-control-lg js-time-elapsed-input" autocomplete="off" style="text-align: right" />
+      <input type="text" id="timeInput" class="form-control form-control-lg js-time-elapsed-input" autocomplete="off" style="text-align: right" title="Duration of the meeting" disabled="disabled" />
     </div>
 
     <div style="float: left; margin-right: 10px; min-height: 80px;">
@@ -39,7 +39,7 @@
 
       <div class="dropdown" style="display: inline-block;">
         <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
+          aria-haspopup="true" aria-expanded="false" title="Set the meeting duration to a specific time">
           Set time to…
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
@@ -91,7 +91,7 @@
       <div style="float:left; margin-right: 10px;">
         <div class="dropdown">
           <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Options">
             <i data-feather="settings" aria-hidden="true"></i>
             <span class="sr-only">Options</span>
           </button>
@@ -102,11 +102,11 @@
       </div>
 
       <div style="float:left; margin-right: 10px;">
-        <select id="user-type" class="custom-select custom-select-lg js-user-type-select" style="min-width: 300px"></select>
+        <select id="user-type" class="custom-select custom-select-lg js-user-type-select" style="min-width: 300px" title="Choose a participant by salary classification"></select>
       </div>
 
       <div style="float:left; margin-right: 10px;">
-        <button type="button" class="btn btn-lg btn-secondary js-add-user" title="Add Participant">
+        <button type="button" class="btn btn-lg btn-secondary js-add-user" title="Add a participant to the meeting">
           <i data-feather="user-plus" aria-hidden="true"></i>
           <span class="hidden-xs">Add Participant</span>
         </button>
