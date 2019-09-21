@@ -73,7 +73,8 @@
     max-width: 100%;
   }
 
-  .btn-lg svg, .dropdown-item svg {
+  .btn-lg svg,
+  .dropdown-item svg {
     margin-top: -0.2em;
   }
 
@@ -85,12 +86,25 @@
     color: #fff;
   }
 
-  .about-container a, .about-container a:link {
+  .about-container a,
+  .about-container a:link {
     color: #8ac0fb;
   }
 
-  .about-container a:hover, .about-container a:active, .about-container a:focus {
+  .about-container a:hover,
+  .about-container a:active,
+  .about-container a:focus {
     color: #69b1ff;
+  }
+
+  .empty-chairs-placeholder {
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .empty-chairs-placeholder li {
+    margin-bottom: 0.6em;
   }
 
   /* Original styles, updated below */
@@ -104,10 +118,8 @@
     font-size: 18px;
     display: block;
   }
-  
-  .time-controls-container {
 
-  }
+  .time-controls-container {}
 
   .clock-display {
     font-size: 2.0rem;
@@ -120,12 +132,13 @@
   }
 
   .add-chairs-container {
-    clear:both;
+    clear: both;
     margin-top: 10px;
     margin-bottom: 10px;
 
     padding: 10px 0px;
   }
+
   .add-chairs-container-box {
     background-color: #ececec;
   }
@@ -162,10 +175,11 @@
     margin-left: 8px;
   }
 
-/* Alternating icons */
+  /* Alternating icons */
   div.chair:hover .user-focused {
     display: block;
   }
+
   div.chair:hover .user-unfocused {
     display: none;
   }
@@ -173,6 +187,7 @@
   div.chair .user-focused {
     display: none;
   }
+
   div.chair .user-unfocused {
     display: block;
   }
