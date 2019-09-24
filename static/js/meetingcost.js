@@ -10,6 +10,7 @@ $(function() {
 
   app.meetingCost.isTimerRunning = false;
   app.meetingCost.previousTimerSeconds = 0;
+  app.meetingCost.defaultBenefitFactor = 1.2;
 
   app.meetingCost.initialize = function() {
     console.log("Meeting cost calculator initialized.");
@@ -203,7 +204,7 @@ $(function() {
     var benefitFactor = _.get(
       app.organizations,
       selectedOrganization + ".benefitFactor",
-      app.defaultBenefitFactor
+      app.meetingCost.defaultBenefitFactor
     );
     // console.log(benefitFactor);
 
