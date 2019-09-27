@@ -19,6 +19,20 @@ The data is converted from CSV files to JSON using the scripts in the [helpers r
 *   Meeting costs are determined by converting annual salaries into hourly rates, then multiplying these against the elapsed time.
 *   Salary classifications with a range of levels are simplified to minimum, maximum, and median rates. These rates (along with optional employee benefit plan and accommodation premium costs) can be selected under the gear options menu.
 
+## Local installation
+
+To install a local version of the Meeting Cost Calculator:
+
+1. Install Hugo by following the [Hugo installation instructions](https://gohugo.io/getting-started/installing/). For MacOS users, [Homebrew](https://brew.sh/) works well.
+
+2. Clone this repository into your preferred location by using `git clone git@github.com:meetingcostcalculator/meeting-cost-calculator-data.git`
+
+3. Switch into the new directory, and install the theme submodule using `git submodule update --remote --merge`
+
+Then, run the Hugo development server using `hugo server -D`
+
+You can learn more about how Hugo works by reading the [Getting Started documentation](https://gohugo.io/getting-started/).
+
 ## Credits
 
 An [Ottawa Civic Tech project](http://ottawacivictech.ca/), built by [Sean Boots](https://twitter.com/sboots/). Thanks to Dan, Conor, Corey, David, Miceal, and Gordon for ideas and contributions!
