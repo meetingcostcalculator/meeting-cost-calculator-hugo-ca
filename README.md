@@ -26,3 +26,7 @@ An [Ottawa Civic Tech project](http://ottawacivictech.ca/), built by [Sean Boots
 This website is based on the [Vanilla Bootstrap Hugo Theme](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme). It uses [Bootstrap 4](https://getbootstrap.com/), the [Feather icon library](https://feathericons.com/), and [Netlify](https://www.netlify.com) for hosting.
 
 This project is licensed under the [MIT license](https://github.com/meetingcostcalculator/meeting-cost-calculator-hugo-ca/blob/master/LICENSE).
+
+## Feedback
+
+Contributions, pull requests, and new issues are welcome! Please add new issues to the [original repository Issues tracker](https://github.com/sboots/meetingcostcalculator/issues).
