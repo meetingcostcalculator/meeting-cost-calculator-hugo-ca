@@ -35,7 +35,7 @@ You can learn more about how Hugo works by reading the [Getting Started document
 
 ## Credits
 
-An [Ottawa Civic Tech project](http://ottawacivictech.ca/), built by [Sean Boots](https://twitter.com/sboots/). Thanks to Dan, Conor, Corey, David, Miceal, and Gordon for ideas and contributions!
+An [Ottawa Civic Tech project](http://ottawacivictech.ca/), built by [Sean Boots](https://twitter.com/sboots/). Thanks to Dan, Conor, Corey, David, Miceal, Rick, Mary Beth, Gordon, and Brandon for ideas and contributions!
 
 This website is based on the [Vanilla Bootstrap Hugo Theme](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme). It uses [Bootstrap 4](https://getbootstrap.com/), the [Feather icon library](https://feathericons.com/), and [Netlify](https://www.netlify.com) for hosting.
 
