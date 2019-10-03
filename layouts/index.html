@@ -13,15 +13,15 @@
 
       <button class="btn btn-lg btn-secondary js-start-time" title="Start Timer">
         <i data-feather="play" aria-hidden="true"></i>
-        <span class="hidden-xs">Start</span>
+        <span class="d-none d-sm-inline-block">Start</span>
       </button>
       <button class="btn btn-lg btn-secondary js-stop-time" title="Stop Timer">
         <i data-feather="pause" aria-hidden="true"></i>
-        <span class="hidden-xs">Pause</span>
+        <span class="d-none d-sm-inline-block">Pause</span>
       </button>
       <button class="btn btn-lg btn-secondary js-reset-time" title="Reset Timer">
         <i data-feather="skip-back" aria-hidden="true"></i>
-        <span class="hidden-xs">Reset</span>
+        <span class="d-none d-sm-inline-block">Reset</span>
       </button>
     </div>
 
@@ -102,20 +102,20 @@
       </div>
 
       <div style="float:left; margin-right: 10px;">
-        <select id="user-type" class="custom-select custom-select-lg js-user-type-select" style="min-width: 300px" title="Choose a participant by salary classification"></select>
+        <select id="user-type" class="custom-select custom-select-lg js-user-type-select" style="" title="Choose a participant by salary classification"></select>
       </div>
 
       <div style="float:left; margin-right: 10px;">
         <button type="button" class="btn btn-lg btn-secondary js-add-user" title="Add a participant to the meeting">
           <i data-feather="user-plus" aria-hidden="true"></i>
-          <span class="hidden-xs">Add Participant</span>
+          <span class="d-none d-md-inline-block">Add Participant</span>
         </button>
       </div>
 
       <div style="float:right;">
         <button class="btn btn-lg btn-secondary js-reset" title="Clear all participants">
-          <span class="visible-xs"><i class="fa fa-close" aria-hidden="true"></i></span>
-          <span class="hidden-xs">Clear</span>
+          <span class="d-block d-sm-none"><i data-feather="x" aria-hidden="true"></i></span>
+          <span class="d-none d-sm-block">Clear</span>
         </button>
       </div>
 
