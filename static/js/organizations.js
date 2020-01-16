@@ -37,7 +37,7 @@ app.organizations = {
         "secondarySource": "",
         "hideDropdownLabels": "0"
     },
-    "dnd": {
+    "caf": {
         "name": "Canadian Armed Forces",
         "dateUpdated": "2017-04-09",
         "benefitFactor": "1.8",
