@@ -4033,8 +4033,8 @@ app.rates = {
         },
         {
             "label": "OPSEU-05933",
-            "min": "1532",
-            "max": "1828",
+            "min": "51532",
+            "max": "61828",
             "description": "Fuel And Tobacco Tax Inspector"
         },
         {
@@ -4429,7 +4429,7 @@ app.rates = {
         },
         {
             "label": "OPSEU-01886",
-            "min": "1872",
+            "min": "61872",
             "max": "77256",
             "description": "Property Assessor 4"
         },
@@ -4525,8 +4525,8 @@ app.rates = {
         },
         {
             "label": "OPSEU-41106",
-            "min": "1796",
-            "max": "2002",
+            "min": "61796",
+            "max": "72002",
             "description": "Resource Technician 4 - Conservation Officer"
         },
         {
@@ -5019,97 +5019,97 @@ app.rates = {
             "label": "AMAPCEO-1",
             "min": "49568",
             "max": "63887",
-            "description": "AMAPCEO Level 1"
+            "description": "Level 1"
         },
         {
             "label": "AMAPCEO-2",
             "min": "51633",
             "max": "70219",
-            "description": "AMAPCEO Level 2"
+            "description": "Level 2"
         },
         {
             "label": "AMAPCEO-3",
             "min": "55764",
             "max": "77173",
-            "description": "AMAPCEO Level 3"
+            "description": "Level 3"
         },
         {
             "label": "AMAPCEO-4",
             "min": "62631",
             "max": "87564",
-            "description": "AMAPCEO Level 4"
+            "description": "Level 4"
         },
         {
             "label": "AMAPCEO-5",
             "min": "66716",
             "max": "96133",
-            "description": "AMAPCEO Level 5"
+            "description": "Level 5"
         },
         {
             "label": "AMAPCEO-6",
             "min": "71955",
             "max": "106033",
-            "description": "AMAPCEO Level 6"
+            "description": "Level 6"
         },
         {
             "label": "AMAPCEO-7",
             "min": "77450",
             "max": "112571",
-            "description": "AMAPCEO Level 7"
+            "description": "Level 7"
         },
         {
             "label": "AMAPCEO-8",
             "min": "87775",
             "max": "123717",
-            "description": "AMAPCEO Level 8"
+            "description": "Level 8"
         },
         {
             "label": "AMAPCEO-ACTUARY 4",
             "min": "62631",
             "max": "91533",
-            "description": "AMAPCEO Actuary 4"
+            "description": "Actuary 4"
         },
         {
             "label": "AMAPCEO-ACTUARY 5",
             "min": "66716",
             "max": "98518",
-            "description": "AMAPCEO Actuary 5"
+            "description": "Actuary 5"
         },
         {
             "label": "AMAPCEO-ACTUARY 6",
             "min": "71955",
             "max": "106033",
-            "description": "AMAPCEO Actuary 6"
+            "description": "Actuary 6"
         },
         {
             "label": "AMAPCEO-ACTUARY 7",
             "min": "77450",
             "max": "116382",
-            "description": "AMAPCEO Actuary 7"
+            "description": "Actuary 7"
         },
         {
             "label": "AMAPCEO-EDUCATION OFFICER 6",
             "min": "71955",
             "max": "124221",
-            "description": "AMAPCEO Education Officer 6"
+            "description": "Education Officer 6"
         },
         {
             "label": "AMAPCEO-SR ECON OFFICER 8",
             "min": "87775",
             "max": "135229",
-            "description": "AMAPCEO Sr Econ Officer 8"
+            "description": "Sr Econ Officer 8"
         },
         {
             "label": "AMAPCEO-ARBITRATOR 8",
             "min": "87775",
             "max": "137498",
-            "description": "AMAPCEO Arbitrator 8"
+            "description": "Arbitrator 8"
         },
         {
             "label": "AMAPCEO-SENIOR PROJECT MANAGER 7",
             "min": "77450",
             "max": "123707",
-            "description": "AMAPCEO Senior Project Manager 7"
+            "description": "Senior Project Manager 7"
         }
     ]
 };
