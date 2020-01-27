@@ -3465,5 +3465,1651 @@ app.rates = {
             "max": "209480.20",
             "description": ""
         }
+    ],
+    "ops": [
+        {
+            "label": "OPSEU-04104",
+            "min": "53510",
+            "max": "64342",
+            "description": "Accident Claims Supervisor 1"
+        },
+        {
+            "label": "OPSEU-04106",
+            "min": "59432",
+            "max": "72988",
+            "description": "Accident Claims Supervisor 2"
+        },
+        {
+            "label": "OPSEU-00990",
+            "min": "48565",
+            "max": "58139",
+            "description": "Accommodation Officer 1"
+        },
+        {
+            "label": "OPSEU-00992",
+            "min": "51550",
+            "max": "61878",
+            "description": "Accommodation Officer 2"
+        },
+        {
+            "label": "OPSEU-00994",
+            "min": "53326",
+            "max": "66285",
+            "description": "Accommodation Officer 3"
+        },
+        {
+            "label": "OPSEU-13688",
+            "min": "58745",
+            "max": "73217",
+            "description": "Agricultural Officer 1"
+        },
+        {
+            "label": "OPSEU-13690",
+            "min": "70101",
+            "max": "89990",
+            "description": "Agricultural Officer 2"
+        },
+        {
+            "label": "OPSEU-60700",
+            "min": "45881",
+            "max": "55268",
+            "description": "Agricultural Specialist 1"
+        },
+        {
+            "label": "OPSEU-60702",
+            "min": "52895",
+            "max": "63959",
+            "description": "Agricultural Specialist 2"
+        },
+        {
+            "label": "OPSEU-60704",
+            "min": "62021",
+            "max": "78027",
+            "description": "Agricultural Specialist 3"
+        },
+        {
+            "label": "OPSEU-13710",
+            "min": "45881",
+            "max": "55268",
+            "description": "Agricultural Specialist 1, Dairy"
+        },
+        {
+            "label": "OPSEU-13712",
+            "min": "52895",
+            "max": "63959",
+            "description": "Agricultural Specialist 2, Dairy"
+        },
+        {
+            "label": "OPSEU-14016",
+            "min": "69052",
+            "max": "88657",
+            "description": "Air Quality Analyst"
+        },
+        {
+            "label": "OPSEU-07860",
+            "min": "44151",
+            "max": "53139",
+            "description": "Archivist 1"
+        },
+        {
+            "label": "OPSEU-07862",
+            "min": "52451",
+            "max": "63370",
+            "description": "Archivist 2"
+        },
+        {
+            "label": "OPSEU-07864",
+            "min": "59222",
+            "max": "73128",
+            "description": "Archivist 3"
+        },
+        {
+            "label": "OPSEU-07870",
+            "min": "68004",
+            "max": "85674",
+            "description": "Artifacts Officer"
+        },
+        {
+            "label": "OPSEU-07390",
+            "min": "54148",
+            "max": "61781",
+            "description": "Athletics Supervisor And Dean Of Men"
+        },
+        {
+            "label": "OPSEU-14021",
+            "min": "50733",
+            "max": "61122",
+            "description": "Biologist 1"
+        },
+        {
+            "label": "OPSEU-14022",
+            "min": "58501",
+            "max": "70745",
+            "description": "Biologist 2A"
+        },
+        {
+            "label": "OPSEU-14024",
+            "min": "63448",
+            "max": "78372",
+            "description": "Biologist 2B"
+        },
+        {
+            "label": "OPSEU-14026",
+            "min": "69548",
+            "max": "87727",
+            "description": "Biologist 3 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-05312",
+            "min": "60848",
+            "max": "67758",
+            "description": "Boiler Inspector"
+        },
+        {
+            "label": "OPSEU-05925",
+            "min": "53313",
+            "max": "64038",
+            "description": "Chief Inspector Of Theatres"
+        },
+        {
+            "label": "OPSEU-05920",
+            "min": "45573",
+            "max": "54549",
+            "description": "Classifier 1, Board Of Censors"
+        },
+        {
+            "label": "OPSEU-05922",
+            "min": "54925",
+            "max": "64038",
+            "description": "Classifier 2, Board Of Censors"
+        },
+        {
+            "label": "OPSEU-05510",
+            "min": "46374",
+            "max": "56986",
+            "description": "Community Development Officer 1"
+        },
+        {
+            "label": "OPSEU-05512",
+            "min": "60307",
+            "max": "76286",
+            "description": "Community Development Officer 2"
+        },
+        {
+            "label": "OPSEU-05513",
+            "min": "65484",
+            "max": "81424",
+            "description": "Community Development Officer 3"
+        },
+        {
+            "label": "OPSEU-12100",
+            "min": "46936",
+            "max": "56599",
+            "description": "Community Planner 1"
+        },
+        {
+            "label": "OPSEU-12102",
+            "min": "54327",
+            "max": "65774",
+            "description": "Community Planner 2"
+        },
+        {
+            "label": "OPSEU-12104",
+            "min": "62743",
+            "max": "78334",
+            "description": "Community Planner 3"
+        },
+        {
+            "label": "OPSEU-12106",
+            "min": "68258",
+            "max": "86005",
+            "description": "Community Planner 4"
+        },
+        {
+            "label": "OPSEU-12108",
+            "min": "75750",
+            "max": "98583",
+            "description": "Community Planner 5"
+        },
+        {
+            "label": "OPSEU-60108",
+            "min": "67548",
+            "max": "83104",
+            "description": "Contract Review Officer"
+        },
+        {
+            "label": "OPSEU-12111",
+            "min": "75000",
+            "max": "94520",
+            "description": "Coordinator, Landscape Architectural Services"
+        },
+        {
+            "label": "OPSEU-30606",
+            "min": "45865",
+            "max": "54272",
+            "description": "Deputy 1, Administration Of Justice"
+        },
+        {
+            "label": "OPSEU-30608",
+            "min": "51433",
+            "max": "61245",
+            "description": "Deputy 2, Administration Of Justice"
+        },
+        {
+            "label": "OPSEU-30612",
+            "min": "60232",
+            "max": "72454",
+            "description": "Deputy Senior 1, Administration Of Justice"
+        },
+        {
+            "label": "OPSEU-02281",
+            "min": "50329",
+            "max": "64007",
+            "description": "Economist 1 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-02283",
+            "min": "60278",
+            "max": "72454",
+            "description": "Economist 2 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-02285",
+            "min": "66125",
+            "max": "84437",
+            "description": "Economist 3 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-02287",
+            "min": "75157",
+            "max": "98138",
+            "description": "Economist 4 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-02289",
+            "min": "81051",
+            "max": "107175",
+            "description": "Economist 5 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-07489",
+            "min": "73859",
+            "max": "95709",
+            "description": "Education Adviser"
+        },
+        {
+            "label": "OPSEU-07081",
+            "min": "92515",
+            "max": "122298",
+            "description": "Education Officer"
+        },
+        {
+            "label": "OPSEU-05344",
+            "min": "62040",
+            "max": "69320",
+            "description": "Elevator Inspector 1"
+        },
+        {
+            "label": "OPSEU-05350",
+            "min": "74049",
+            "max": "85118",
+            "description": "Elevator Inspector 3"
+        },
+        {
+            "label": "OPSEU-03519",
+            "min": "64979",
+            "max": "73858",
+            "description": "Emergency Health Services Investigator"
+        },
+        {
+            "label": "OPSEU-05521",
+            "min": "62652",
+            "max": "78824",
+            "description": "Employment Standards Auditor 1"
+        },
+        {
+            "label": "OPSEU-05523",
+            "min": "72851",
+            "max": "89579",
+            "description": "Employment Standards Auditor 2"
+        },
+        {
+            "label": "OPSEU-05530",
+            "min": "61395",
+            "max": "76378",
+            "description": "Employment Standards Officer 1"
+        },
+        {
+            "label": "OPSEU-12700",
+            "min": "50405",
+            "max": "60819",
+            "description": "Engineering Officer 1"
+        },
+        {
+            "label": "OPSEU-12702",
+            "min": "59078",
+            "max": "72658",
+            "description": "Engineering Officer 2"
+        },
+        {
+            "label": "OPSEU-12704",
+            "min": "64657",
+            "max": "81842",
+            "description": "Engineering Officer 3"
+        },
+        {
+            "label": "OPSEU-12706",
+            "min": "73585",
+            "max": "94954",
+            "description": "Engineering Officer 4"
+        },
+        {
+            "label": "OPSEU-12680",
+            "min": "52309",
+            "max": "63989",
+            "description": "Engineering Services Officer 2"
+        },
+        {
+            "label": "OPSEU-12682",
+            "min": "61869",
+            "max": "77769",
+            "description": "Engineering Services Officer 3"
+        },
+        {
+            "label": "OPSEU-12684",
+            "min": "69052",
+            "max": "88657",
+            "description": "Engineering Services Officer 4"
+        },
+        {
+            "label": "OPSEU-12686",
+            "min": "77494",
+            "max": "101397",
+            "description": "Engineering Services Officer 5"
+        },
+        {
+            "label": "OPSEU-61500",
+            "min": "47986",
+            "max": "56440",
+            "description": "Environmental Officer 1"
+        },
+        {
+            "label": "OPSEU-61502",
+            "min": "52783",
+            "max": "62463",
+            "description": "Environmental Officer 2"
+        },
+        {
+            "label": "OPSEU-61504",
+            "min": "59254",
+            "max": "70516",
+            "description": "Environmental Officer 3"
+        },
+        {
+            "label": "OPSEU-61504P",
+            "min": "63252",
+            "max": "74514",
+            "description": "Environmental Officer 3 (Peel)"
+        },
+        {
+            "label": "OPSEU-61507",
+            "min": "72851",
+            "max": "89579",
+            "description": "Environmental Officer 4"
+        },
+        {
+            "label": "OPSEU-61509",
+            "min": "78679",
+            "max": "96077",
+            "description": "Environmental Officer 5"
+        },
+        {
+            "label": "OPSEU-00911",
+            "min": "47852",
+            "max": "57269",
+            "description": "Estate Assessor 1"
+        },
+        {
+            "label": "OPSEU-00913",
+            "min": "55410",
+            "max": "66702",
+            "description": "Estate Assessor 2"
+        },
+        {
+            "label": "OPSEU-03521",
+            "min": "58182",
+            "max": "71440",
+            "description": "Executive Officer 1 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-03523",
+            "min": "66050",
+            "max": "84224",
+            "description": "Executive Officer 2 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-03525",
+            "min": "78359",
+            "max": "102231",
+            "description": "Executive Officer 3 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-13640",
+            "min": "47881",
+            "max": "53343",
+            "description": "Farm Products Inspector 1"
+        },
+        {
+            "label": "OPSEU-13642",
+            "min": "54006",
+            "max": "64796",
+            "description": "Farm Products Inspector 2"
+        },
+        {
+            "label": "OPSEU-10564",
+            "min": "48445",
+            "max": "58095",
+            "description": "Field Worker 1, Homes For Special Care"
+        },
+        {
+            "label": "OPSEU-20205",
+            "min": "49906",
+            "max": "61053",
+            "description": "Financial Officer 1 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-20203",
+            "min": "57294",
+            "max": "70134",
+            "description": "Financial Officer 2 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-20201",
+            "min": "61983",
+            "max": "77554",
+            "description": "Financial Officer 3 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-20207",
+            "min": "67963",
+            "max": "86978",
+            "description": "Financial Officer 4 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-20209",
+            "min": "73228",
+            "max": "94024",
+            "description": "Financial Officer 5 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-20226",
+            "min": "36627",
+            "max": "65192",
+            "description": "Financial Officer Trainee"
+        },
+        {
+            "label": "OPSEU-07417",
+            "min": "76441",
+            "max": "93370",
+            "description": "Fire College Instructor"
+        },
+        {
+            "label": "OPSEU-05701",
+            "min": "63988",
+            "max": "77141",
+            "description": "Fire Safety Officer 1"
+        },
+        {
+            "label": "OPSEU-05703",
+            "min": "70870",
+            "max": "86563",
+            "description": "Fire Safety Officer 2"
+        },
+        {
+            "label": "OPSEU-05705",
+            "min": "76378",
+            "max": "96050",
+            "description": "Fire Safety Officer 3"
+        },
+        {
+            "label": "OPSEU-05700",
+            "min": "73381",
+            "max": "89645",
+            "description": "Fire Services Adviser 1"
+        },
+        {
+            "label": "OPSEU-05702",
+            "min": "79089",
+            "max": "99481",
+            "description": "Fire Services Adviser 2"
+        },
+        {
+            "label": "OPSEU-05714",
+            "min": "72851",
+            "max": "89579",
+            "description": "Fire Services Investigator 1"
+        },
+        {
+            "label": "OPSEU-05716",
+            "min": "78679",
+            "max": "96077",
+            "description": "Fire Services Investigator 2"
+        },
+        {
+            "label": "OPSEU-13991",
+            "min": "50733",
+            "max": "61122",
+            "description": "Forester 1"
+        },
+        {
+            "label": "OPSEU-13992",
+            "min": "58501",
+            "max": "70745",
+            "description": "Forester 2A"
+        },
+        {
+            "label": "OPSEU-13994",
+            "min": "63448",
+            "max": "78372",
+            "description": "Forester 2B"
+        },
+        {
+            "label": "OPSEU-13995",
+            "min": "69548",
+            "max": "87727",
+            "description": "Forester 3"
+        },
+        {
+            "label": "OPSEU-13997",
+            "min": "79003",
+            "max": "101440",
+            "description": "Forester 4"
+        },
+        {
+            "label": "OPSEU-13999",
+            "min": "89304",
+            "max": "117607",
+            "description": "Forester 5"
+        },
+        {
+            "label": "OPSEU-05933",
+            "min": "1532",
+            "max": "1828",
+            "description": "Fuel And Tobacco Tax Inspector"
+        },
+        {
+            "label": "OPSEU-14502",
+            "min": "59842",
+            "max": "73172",
+            "description": "Geoscientist 1"
+        },
+        {
+            "label": "OPSEU-14504",
+            "min": "63124",
+            "max": "79617",
+            "description": "Geoscientist 2"
+        },
+        {
+            "label": "OPSEU-14506",
+            "min": "75343",
+            "max": "96975",
+            "description": "Geoscientist 3"
+        },
+        {
+            "label": "OPSEU-14508",
+            "min": "81284",
+            "max": "107078",
+            "description": "Geoscientist 4"
+        },
+        {
+            "label": "OPSEU-07850",
+            "min": "56002",
+            "max": "65724",
+            "description": "Historical Research Officer 1"
+        },
+        {
+            "label": "OPSEU-07852",
+            "min": "64303",
+            "max": "75955",
+            "description": "Historical Research Officer 2"
+        },
+        {
+            "label": "OPSEU-02270",
+            "min": "46075",
+            "max": "55142",
+            "description": "Housing Analyst 1"
+        },
+        {
+            "label": "OPSEU-02272",
+            "min": "56205",
+            "max": "67691",
+            "description": "Housing Analyst 2"
+        },
+        {
+            "label": "OPSEU-05403",
+            "min": "72851",
+            "max": "89579",
+            "description": "Human Rights Officer"
+        },
+        {
+            "label": "OPSEU-02891",
+            "min": "52139",
+            "max": "64568",
+            "description": "Immigration Officer"
+        },
+        {
+            "label": "OPSEU-10512",
+            "min": "51924",
+            "max": "62253",
+            "description": "Indian Development Officer"
+        },
+        {
+            "label": "OPSEU-12120",
+            "min": "51737",
+            "max": "62056",
+            "description": "Industrial Development Officer 1"
+        },
+        {
+            "label": "OPSEU-12122",
+            "min": "68041",
+            "max": "85218",
+            "description": "Industrial Development Officer 2"
+        },
+        {
+            "label": "OPSEU-12124",
+            "min": "74797",
+            "max": "95470",
+            "description": "Industrial Development Officer 3"
+        },
+        {
+            "label": "OPSEU-95100",
+            "min": "60745",
+            "max": "75358",
+            "description": "Information (Bu) Aif16"
+        },
+        {
+            "label": "OPSEU-95101",
+            "min": "65616",
+            "max": "80710",
+            "description": "Information (Bu) Aif17"
+        },
+        {
+            "label": "OPSEU-02701",
+            "min": "59678",
+            "max": "70104",
+            "description": "Information Officer 1"
+        },
+        {
+            "label": "OPSEU-02703",
+            "min": "65649",
+            "max": "77554",
+            "description": "Information Officer 2"
+        },
+        {
+            "label": "OPSEU-02705",
+            "min": "73570",
+            "max": "90020",
+            "description": "Information Officer 3"
+        },
+        {
+            "label": "OPSEU-02707",
+            "min": "76234",
+            "max": "95036",
+            "description": "Information Officer 4"
+        },
+        {
+            "label": "OPSEU-12460",
+            "min": "42394",
+            "max": "50377",
+            "description": "Inspector Of Signs And Buildings Permits 1"
+        },
+        {
+            "label": "OPSEU-12462",
+            "min": "61882",
+            "max": "77786",
+            "description": "Inspector Of Signs And Buildings Permits 2"
+        },
+        {
+            "label": "OPSEU-12144",
+            "min": "65426",
+            "max": "83177",
+            "description": "Inspector Of Surveys 2"
+        },
+        {
+            "label": "OPSEU-05932",
+            "min": "47283",
+            "max": "56611",
+            "description": "Inspector Of Vital Statistics"
+        },
+        {
+            "label": "OPSEU-51074",
+            "min": "50942",
+            "max": "61070",
+            "description": "Insurance Representative"
+        },
+        {
+            "label": "OPSEU-10101",
+            "min": "69327",
+            "max": "88042",
+            "description": "Investigative Social Worker Official Guardian"
+        },
+        {
+            "label": "OPSEU-13796",
+            "min": "54021",
+            "max": "64801",
+            "description": "Investigator 1, Agricultural Products"
+        },
+        {
+            "label": "OPSEU-05670",
+            "min": "64876",
+            "max": "81125",
+            "description": "Investigator 1, Ontario Securities Commission"
+        },
+        {
+            "label": "OPSEU-05672",
+            "min": "71971",
+            "max": "90418",
+            "description": "Investigator 2, Ontario Securities Commission"
+        },
+        {
+            "label": "OPSEU-00926",
+            "min": "47112",
+            "max": "56425",
+            "description": "Investigator Of Estates"
+        },
+        {
+            "label": "OPSEU-07620",
+            "min": "60669",
+            "max": "76167",
+            "description": "Language And Citizenship Training Specialist 1"
+        },
+        {
+            "label": "OPSEU-07602",
+            "min": "46306",
+            "max": "55782",
+            "description": "Lecturer 1, Agricultural School"
+        },
+        {
+            "label": "OPSEU-07604",
+            "min": "59720",
+            "max": "73092",
+            "description": "Lecturer 2, Agricultural School"
+        },
+        {
+            "label": "OPSEU-07606",
+            "min": "67109",
+            "max": "84435",
+            "description": "Lecturer 3, Agricultural School"
+        },
+        {
+            "label": "OPSEU-12174",
+            "min": "63672",
+            "max": "80092",
+            "description": "Legal Survey Examiner 3"
+        },
+        {
+            "label": "OPSEU-12176",
+            "min": "70101",
+            "max": "89990",
+            "description": "Legal Survey Examiner 4"
+        },
+        {
+            "label": "OPSEU-02725",
+            "min": "60039",
+            "max": "72469",
+            "description": "Legislative Assistant Editor"
+        },
+        {
+            "label": "OPSEU-07960",
+            "min": "58724",
+            "max": "69329",
+            "description": "Librarian 1"
+        },
+        {
+            "label": "OPSEU-07962",
+            "min": "62547",
+            "max": "74019",
+            "description": "Librarian 2"
+        },
+        {
+            "label": "OPSEU-07964",
+            "min": "67083",
+            "max": "79725",
+            "description": "Librarian 3"
+        },
+        {
+            "label": "OPSEU-07966",
+            "min": "78494",
+            "max": "97740",
+            "description": "Librarian 4"
+        },
+        {
+            "label": "OPSEU-12705",
+            "min": "66692",
+            "max": "86100",
+            "description": "Maintenance Operation Analyst"
+        },
+        {
+            "label": "OPSEU-09566",
+            "min": "44967",
+            "max": "49979",
+            "description": "Meat Inspector 1 (Hourly)"
+        },
+        {
+            "label": "OPSEU-01885",
+            "min": "60570",
+            "max": "75081",
+            "description": "Neighbourhood\/Functional Assessor"
+        },
+        {
+            "label": "OPSEU-03896",
+            "min": "55574",
+            "max": "68223",
+            "description": "Northern Affairs Officer 1"
+        },
+        {
+            "label": "OPSEU-03898",
+            "min": "61256",
+            "max": "75281",
+            "description": "Northern Affairs Officer 2"
+        },
+        {
+            "label": "OPSEU-09526",
+            "min": "65273",
+            "max": "78285",
+            "description": "Nursing Home Officer, Environmental Health"
+        },
+        {
+            "label": "OPSEU-05473",
+            "min": "63080",
+            "max": "78824",
+            "description": "Occupational Health And Safety Advisor"
+        },
+        {
+            "label": "OPSEU-05468",
+            "min": "72851",
+            "max": "89579",
+            "description": "Occupational Health And Safety Inspector"
+        },
+        {
+            "label": "OPSEU-15600",
+            "min": "69052",
+            "max": "91830",
+            "description": "Occupational Hygienist"
+        },
+        {
+            "label": "OPSEU-09532",
+            "min": "55201",
+            "max": "66419",
+            "description": "Organizer 2, X-Ray Surveys"
+        },
+        {
+            "label": "OPSEU-10505",
+            "min": "66737",
+            "max": "79867",
+            "description": "Parental Support Worker"
+        },
+        {
+            "label": "OPSEU-14160",
+            "min": "52888",
+            "max": "66762",
+            "description": "Parks Planner 1"
+        },
+        {
+            "label": "OPSEU-14163",
+            "min": "63124",
+            "max": "79617",
+            "description": "Parks Planner 2 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-14164",
+            "min": "71704",
+            "max": "92066",
+            "description": "Parks Planner 3"
+        },
+        {
+            "label": "OPSEU-00960",
+            "min": "63871",
+            "max": "79839",
+            "description": "Personalty Valuator 1"
+        },
+        {
+            "label": "OPSEU-15547",
+            "min": "72479",
+            "max": "91998",
+            "description": "Pesticides And Terrestrial Effects Officer"
+        },
+        {
+            "label": "OPSEU-09600",
+            "min": "46220",
+            "max": "55688",
+            "description": "Pesticides Control Officer 1"
+        },
+        {
+            "label": "OPSEU-09602",
+            "min": "54375",
+            "max": "66456",
+            "description": "Pesticides Control Officer 2"
+        },
+        {
+            "label": "OPSEU-09604",
+            "min": "60819",
+            "max": "74210",
+            "description": "Pesticides Control Officer 3"
+        },
+        {
+            "label": "OPSEU-05517",
+            "min": "63852",
+            "max": "69141",
+            "description": "Program Advisor Trainee, Early Childhood Education"
+        },
+        {
+            "label": "OPSEU-05516",
+            "min": "66398",
+            "max": "81424",
+            "description": "Program Advisor, Early Childhood Education"
+        },
+        {
+            "label": "OPSEU-01880",
+            "min": "37452",
+            "max": "47731",
+            "description": "Property Assessor 1"
+        },
+        {
+            "label": "OPSEU-01882",
+            "min": "44794",
+            "max": "55020",
+            "description": "Property Assessor 2"
+        },
+        {
+            "label": "OPSEU-01884",
+            "min": "55718",
+            "max": "69057",
+            "description": "Property Assessor 3"
+        },
+        {
+            "label": "OPSEU-01886",
+            "min": "1872",
+            "max": "77256",
+            "description": "Property Assessor 4"
+        },
+        {
+            "label": "OPSEU-00481",
+            "min": "67292",
+            "max": "86441",
+            "description": "Provincial Prosecutor"
+        },
+        {
+            "label": "OPSEU-09539",
+            "min": "50996",
+            "max": "61145",
+            "description": "Public Health Inspector 1"
+        },
+        {
+            "label": "OPSEU-09541",
+            "min": "53174",
+            "max": "63905",
+            "description": "Public Health Inspector 2"
+        },
+        {
+            "label": "OPSEU-09547",
+            "min": "62652",
+            "max": "78824",
+            "description": "Public Health Inspector 3"
+        },
+        {
+            "label": "OPSEU-01000",
+            "min": "62375",
+            "max": "75256",
+            "description": "Real Estate Officer 1"
+        },
+        {
+            "label": "OPSEU-01002",
+            "min": "65690",
+            "max": "80378",
+            "description": "Real Estate Officer 2"
+        },
+        {
+            "label": "OPSEU-01004",
+            "min": "71521",
+            "max": "91545",
+            "description": "Real Estate Officer 3"
+        },
+        {
+            "label": "OPSEU-17142",
+            "min": "55668",
+            "max": "65290",
+            "description": "Records Officer 1"
+        },
+        {
+            "label": "OPSEU-17144",
+            "min": "61486",
+            "max": "72473",
+            "description": "Records Officer 2"
+        },
+        {
+            "label": "OPSEU-17140",
+            "min": "50814",
+            "max": "59112",
+            "description": "Records Officer Junior"
+        },
+        {
+            "label": "OPSEU-05414",
+            "min": "69919",
+            "max": "86757",
+            "description": "Regional Case Co-Ordinator, Human Rights"
+        },
+        {
+            "label": "OPSEU-10114",
+            "min": "60356",
+            "max": "76634",
+            "description": "Rehabilitation Employment Officer"
+        },
+        {
+            "label": "OPSEU-10202",
+            "min": "43577",
+            "max": "47533",
+            "description": "Rehabilitation Officer 1, Health"
+        },
+        {
+            "label": "OPSEU-10204",
+            "min": "49958",
+            "max": "59892",
+            "description": "Rehabilitation Officer 2, Health"
+        },
+        {
+            "label": "OPSEU-10206",
+            "min": "53326",
+            "max": "66285",
+            "description": "Rehabilitation Officer 3, Health"
+        },
+        {
+            "label": "OPSEU-41106",
+            "min": "1796",
+            "max": "2002",
+            "description": "Resource Technician 4 - Conservation Officer"
+        },
+        {
+            "label": "OPSEU-41108",
+            "min": "69404",
+            "max": "88502",
+            "description": "Resource Technician 5 - Conservation Officer"
+        },
+        {
+            "label": "OPSEU-14009",
+            "min": "46053",
+            "max": "55480",
+            "description": "Resources Manager 1"
+        },
+        {
+            "label": "OPSEU-14011",
+            "min": "52888",
+            "max": "66762",
+            "description": "Resources Manager 2"
+        },
+        {
+            "label": "OPSEU-14014",
+            "min": "63124",
+            "max": "79617",
+            "description": "Resources Manager 3 (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-14015",
+            "min": "69052",
+            "max": "88657",
+            "description": "Resources Manager 4"
+        },
+        {
+            "label": "OPSEU-05426",
+            "min": "47283",
+            "max": "56611",
+            "description": "Returning Officer, Ontario Labour Relations Board"
+        },
+        {
+            "label": "OPSEU-05994",
+            "min": "56001",
+            "max": "67414",
+            "description": "Review Officer"
+        },
+        {
+            "label": "OPSEU-05996",
+            "min": "65023",
+            "max": "81317",
+            "description": "Review Supervisor 2"
+        },
+        {
+            "label": "OPSEU-02850",
+            "min": "52702",
+            "max": "63086",
+            "description": "Safety Instruction Officer 1"
+        },
+        {
+            "label": "OPSEU-02856",
+            "min": "65184",
+            "max": "82009",
+            "description": "Safety Instruction Officer 2"
+        },
+        {
+            "label": "OPSEU-41301",
+            "min": "43700",
+            "max": "47288",
+            "description": "Security Officer 1"
+        },
+        {
+            "label": "OPSEU-41303",
+            "min": "45299",
+            "max": "49316",
+            "description": "Security Officer 2"
+        },
+        {
+            "label": "OPSEU-41305",
+            "min": "47171",
+            "max": "51032",
+            "description": "Security Officer 3"
+        },
+        {
+            "label": "OPSEU-41307",
+            "min": "48809",
+            "max": "52787",
+            "description": "Security Officer 4"
+        },
+        {
+            "label": "OPSEU-14027",
+            "min": "79003",
+            "max": "101440",
+            "description": "Senior Biologist"
+        },
+        {
+            "label": "OPSEU-05997",
+            "min": "70051",
+            "max": "87613",
+            "description": "Senior Operational Policy Officer"
+        },
+        {
+            "label": "OPSEU-14028",
+            "min": "58661",
+            "max": "75575",
+            "description": "Senior Teacher (Ontario Science Centre)"
+        },
+        {
+            "label": "OPSEU-05942",
+            "min": "51909",
+            "max": "62326",
+            "description": "Service Areas Inspector"
+        },
+        {
+            "label": "OPSEU-05940",
+            "min": "58387",
+            "max": "71512",
+            "description": "Service Areas Manager"
+        },
+        {
+            "label": "OPSEU-30600",
+            "min": "43111",
+            "max": "51347",
+            "description": "Sheriff'S Officer 1"
+        },
+        {
+            "label": "OPSEU-30602",
+            "min": "48680",
+            "max": "58324",
+            "description": "Sheriff'S Officer 2"
+        },
+        {
+            "label": "OPSEU-30604",
+            "min": "54695",
+            "max": "65539",
+            "description": "Sheriff'S Officer 2A"
+        },
+        {
+            "label": "OPSEU-10159",
+            "min": "55860",
+            "max": "68223",
+            "description": "Staff Training Officer, Community & Social Services (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-02200",
+            "min": "45728",
+            "max": "55022",
+            "description": "Statistician 1"
+        },
+        {
+            "label": "OPSEU-02202",
+            "min": "53099",
+            "max": "64210",
+            "description": "Statistician 2"
+        },
+        {
+            "label": "OPSEU-02204",
+            "min": "64745",
+            "max": "81452",
+            "description": "Statistician 3"
+        },
+        {
+            "label": "OPSEU-02206",
+            "min": "77494",
+            "max": "101397",
+            "description": "Statistician 4"
+        },
+        {
+            "label": "OPSEU-12707",
+            "min": "71381",
+            "max": "90351",
+            "description": "Structural Technician"
+        },
+        {
+            "label": "OPSEU-01810",
+            "min": "55410",
+            "max": "66702",
+            "description": "Supervisor 1, Municipal Organization And Administration"
+        },
+        {
+            "label": "OPSEU-01812",
+            "min": "67578",
+            "max": "85004",
+            "description": "Supervisor 2, Municipal Organization And Administration"
+        },
+        {
+            "label": "OPSEU-01808",
+            "min": "44991",
+            "max": "53789",
+            "description": "Supervisor Municipal Organization And Administration Trainee"
+        },
+        {
+            "label": "OPSEU-03531",
+            "min": "61395",
+            "max": "76378",
+            "description": "Supervisor Of Operations (Bargaining Unit)"
+        },
+        {
+            "label": "OPSEU-17152",
+            "min": "52139",
+            "max": "62546",
+            "description": "Systems Officer 1"
+        },
+        {
+            "label": "OPSEU-17154",
+            "min": "58057",
+            "max": "71194",
+            "description": "Systems Officer 2"
+        },
+        {
+            "label": "OPSEU-17156",
+            "min": "64747",
+            "max": "81534",
+            "description": "Systems Officer 3"
+        },
+        {
+            "label": "OPSEU-17158",
+            "min": "69533",
+            "max": "88867",
+            "description": "Systems Officer 4"
+        },
+        {
+            "label": "OPSEU-17160",
+            "min": "74868",
+            "max": "96716",
+            "description": "Systems Officer 5"
+        },
+        {
+            "label": "OPSEU-17162",
+            "min": "85159",
+            "max": "106386",
+            "description": "Systems Officer 6"
+        },
+        {
+            "label": "OPSEU-17164",
+            "min": "92679",
+            "max": "121898",
+            "description": "Systems Officer 7"
+        },
+        {
+            "label": "OPSEU-17150",
+            "min": "41466",
+            "max": "55364",
+            "description": "Systems Officer Junior"
+        },
+        {
+            "label": "OPSEU-03301",
+            "min": "52490",
+            "max": "64214",
+            "description": "Tax Auditor 1"
+        },
+        {
+            "label": "OPSEU-03303",
+            "min": "58514",
+            "max": "71626",
+            "description": "Tax Auditor 2"
+        },
+        {
+            "label": "OPSEU-03305",
+            "min": "66259",
+            "max": "82901",
+            "description": "Tax Auditor 3"
+        },
+        {
+            "label": "OPSEU-03307",
+            "min": "72476",
+            "max": "92756",
+            "description": "Tax Auditor 4"
+        },
+        {
+            "label": "OPSEU-03309",
+            "min": "81422",
+            "max": "104542",
+            "description": "Tax Auditor 5"
+        },
+        {
+            "label": "OPSEU-12114",
+            "min": "79958",
+            "max": "103808",
+            "description": "Technical Consultant 1"
+        },
+        {
+            "label": "OPSEU-06080",
+            "min": "41163",
+            "max": "45392",
+            "description": "Technician 1, Fuel"
+        },
+        {
+            "label": "OPSEU-06082",
+            "min": "59159",
+            "max": "66152",
+            "description": "Technician 2, Fuel"
+        },
+        {
+            "label": "OPSEU-06084",
+            "min": "62689",
+            "max": "70210",
+            "description": "Technician 3, Fuel"
+        },
+        {
+            "label": "OPSEU-07856",
+            "min": "64303",
+            "max": "75955",
+            "description": "Toponymist"
+        },
+        {
+            "label": "OPSEU-02790",
+            "min": "58166",
+            "max": "69509",
+            "description": "Translator 1"
+        },
+        {
+            "label": "OPSEU-02792",
+            "min": "66201",
+            "max": "82086",
+            "description": "Translator 2"
+        },
+        {
+            "label": "OPSEU-02794",
+            "min": "72122",
+            "max": "90282",
+            "description": "Translator 3"
+        },
+        {
+            "label": "OPSEU-06010",
+            "min": "69067",
+            "max": "88672",
+            "description": "Transportation Compliance Program Administrator"
+        },
+        {
+            "label": "OPSEU-06007",
+            "min": "65700",
+            "max": "85770",
+            "description": "Transportation Enforcement Investigator"
+        },
+        {
+            "label": "OPSEU-06001",
+            "min": "57663",
+            "max": "62863",
+            "description": "Transportation Enforcement Officer 1 (T1 Salary Note)"
+        },
+        {
+            "label": "OPSEU-06003",
+            "min": "64312",
+            "max": "72572",
+            "description": "Transportation Enforcement Officer 2 (T1 Salary Note)"
+        },
+        {
+            "label": "OPSEU-06005",
+            "min": "67579",
+            "max": "76814",
+            "description": "Transportation Enforcement Officer 3"
+        },
+        {
+            "label": "OPSEU-51080",
+            "min": "40377",
+            "max": "46685",
+            "description": "Travel Counsellor 1"
+        },
+        {
+            "label": "OPSEU-51082",
+            "min": "45097",
+            "max": "52459",
+            "description": "Travel Counsellor 2"
+        },
+        {
+            "label": "OPSEU-51084",
+            "min": "46382",
+            "max": "55132",
+            "description": "Travel Counsellor 3"
+        },
+        {
+            "label": "OPSEU-61512",
+            "min": "66791",
+            "max": "80109",
+            "description": "Utility Plant Process & Compliance Technologist"
+        },
+        {
+            "label": "OPSEU-05998",
+            "min": "69067",
+            "max": "88672",
+            "description": "Vehicle Inspection Administrator (T1 Salary Note)"
+        },
+        {
+            "label": "OPSEU-09570",
+            "min": "56831",
+            "max": "70169",
+            "description": "Veterinary Scientist 1"
+        },
+        {
+            "label": "OPSEU-09572",
+            "min": "62892",
+            "max": "79087",
+            "description": "Veterinary Scientist 2"
+        },
+        {
+            "label": "OPSEU-10090",
+            "min": "58161",
+            "max": "67533",
+            "description": "Volunteer Services Assistant"
+        },
+        {
+            "label": "OPSEU-10092",
+            "min": "65254",
+            "max": "75962",
+            "description": "Volunteer Services Organizer"
+        },
+        {
+            "label": "OPSEU-10500",
+            "min": "54004",
+            "max": "57345",
+            "description": "Welfare Field Worker (Probationary)"
+        },
+        {
+            "label": "OPSEU-10501",
+            "min": "56606",
+            "max": "66023",
+            "description": "Welfare Field Worker 1"
+        },
+        {
+            "label": "OPSEU-10503",
+            "min": "61826",
+            "max": "74268",
+            "description": "Welfare Field Worker 2"
+        },
+        {
+            "label": "OPSEU-10570",
+            "min": "63354",
+            "max": "76067",
+            "description": "Workers' Compensation Adviser 1"
+        },
+        {
+            "label": "OPSEU-10572",
+            "min": "77929",
+            "max": "97127",
+            "description": "Workers' Compensation Adviser 2"
+        },
+        {
+            "label": "OPSEU-02293",
+            "min": "76570",
+            "max": "97805",
+            "description": "Workers' Compensation Consultant"
+        },
+        {
+            "label": "OPSEU-50583",
+            "min": "61231",
+            "max": "77504",
+            "description": "16 Social Program"
+        },
+        {
+            "label": "OPSEU-50586",
+            "min": "66467",
+            "max": "83420",
+            "description": "17 Program Analysis"
+        },
+        {
+            "label": "OPSEU-50587",
+            "min": "76168",
+            "max": "93926",
+            "description": "17 Personal Administration"
+        },
+        {
+            "label": "OPSEU-50588",
+            "min": "67780",
+            "max": "85069",
+            "description": "17 Purchasing And Supply"
+        },
+        {
+            "label": "OPSEU-50591",
+            "min": "69892",
+            "max": "89806",
+            "description": "18 Financial Administration"
+        },
+        {
+            "label": "OPSEU-50593",
+            "min": "69892",
+            "max": "89806",
+            "description": "18 Social Program"
+        },
+        {
+            "label": "OPSEU-50595",
+            "min": "73412",
+            "max": "96615",
+            "description": "19 Program Analysis"
+        },
+        {
+            "label": "OPSEU-50596",
+            "min": "73412",
+            "max": "96615",
+            "description": "19 Social Program"
+        },
+        {
+            "label": "AMAPCEO-1",
+            "min": "49568",
+            "max": "63887",
+            "description": "AMAPCEO Level 1"
+        },
+        {
+            "label": "AMAPCEO-2",
+            "min": "51633",
+            "max": "70219",
+            "description": "AMAPCEO Level 2"
+        },
+        {
+            "label": "AMAPCEO-3",
+            "min": "55764",
+            "max": "77173",
+            "description": "AMAPCEO Level 3"
+        },
+        {
+            "label": "AMAPCEO-4",
+            "min": "62631",
+            "max": "87564",
+            "description": "AMAPCEO Level 4"
+        },
+        {
+            "label": "AMAPCEO-5",
+            "min": "66716",
+            "max": "96133",
+            "description": "AMAPCEO Level 5"
+        },
+        {
+            "label": "AMAPCEO-6",
+            "min": "71955",
+            "max": "106033",
+            "description": "AMAPCEO Level 6"
+        },
+        {
+            "label": "AMAPCEO-7",
+            "min": "77450",
+            "max": "112571",
+            "description": "AMAPCEO Level 7"
+        },
+        {
+            "label": "AMAPCEO-8",
+            "min": "87775",
+            "max": "123717",
+            "description": "AMAPCEO Level 8"
+        },
+        {
+            "label": "AMAPCEO-ACTUARY 4",
+            "min": "62631",
+            "max": "91533",
+            "description": "AMAPCEO Actuary 4"
+        },
+        {
+            "label": "AMAPCEO-ACTUARY 5",
+            "min": "66716",
+            "max": "98518",
+            "description": "AMAPCEO Actuary 5"
+        },
+        {
+            "label": "AMAPCEO-ACTUARY 6",
+            "min": "71955",
+            "max": "106033",
+            "description": "AMAPCEO Actuary 6"
+        },
+        {
+            "label": "AMAPCEO-ACTUARY 7",
+            "min": "77450",
+            "max": "116382",
+            "description": "AMAPCEO Actuary 7"
+        },
+        {
+            "label": "AMAPCEO-EDUCATION OFFICER 6",
+            "min": "71955",
+            "max": "124221",
+            "description": "AMAPCEO Education Officer 6"
+        },
+        {
+            "label": "AMAPCEO-SR ECON OFFICER 8",
+            "min": "87775",
+            "max": "135229",
+            "description": "AMAPCEO Sr Econ Officer 8"
+        },
+        {
+            "label": "AMAPCEO-ARBITRATOR 8",
+            "min": "87775",
+            "max": "137498",
+            "description": "AMAPCEO Arbitrator 8"
+        },
+        {
+            "label": "AMAPCEO-SENIOR PROJECT MANAGER 7",
+            "min": "77450",
+            "max": "123707",
+            "description": "AMAPCEO Senior Project Manager 7"
+        }
     ]
 };
