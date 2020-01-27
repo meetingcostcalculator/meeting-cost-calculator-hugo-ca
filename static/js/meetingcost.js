@@ -253,6 +253,9 @@ $(function() {
         rateData
       );
 
+      // Include the org ID for reference
+      _.set(rateData, "org", app.selectedOrganization);
+
       app.meetingCost.participants.push(rateData);
     } else {
       // $("#user-type").animateCss("shake");
@@ -417,5 +420,11 @@ $(function() {
     $(".chairs-map").html(app.meetingCost.chairContainerTemplate());
     // Re-render Feather icons
     feather.replace();
+  };
+
+  app.meetingCost.limitString = function(text, count) {
+    // Thanks to
+    // https://stackoverflow.com/a/44821227/756641
+    return text.slice(0, count) + (text.length > count ? "…" : "");
   };
 });

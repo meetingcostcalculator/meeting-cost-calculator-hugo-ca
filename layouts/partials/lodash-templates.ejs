@@ -24,7 +24,15 @@
         <div class="user-focused">
           <i data-feather="user-x" aria-hidden="true" width="40" height="40"></i>
         </div>
-        <span class="chair-label"><%- value.label %></span>
+        <% if(_.toInteger(_.get(app.organizations, value.org + '.useParticipantDescriptionsOnly')) === 1) { %> 
+          <span class="chair-label chair-label-small">
+            <%- app.meetingCost.limitString(value.description, 35) %>
+          </span>
+        <% } else { %>
+          <span class="chair-label">
+            <%- value.label %>
+          </span>
+        <% } %>
       </div>
   
     <% }) %>
